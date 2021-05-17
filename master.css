@@ -1,0 +1,141 @@
+/*
+backgroundColor = #030302;
+textColor = #CCFF19, #65FF00;
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #030302;
+  font-family: arial;
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto auto auto;
+  color: #fff;
+}
+.nav {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: stretch;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.navbar {
+  display: none;
+}
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+}
+.nav h2 {
+  margin-right: 40px;
+  font-size: 1.1em;
+  /* width: 20%; */
+}
+.small {
+  font-size: .5em;
+  font-weight: bolder;
+  padding-left: 2px;
+  color: #65FF00;
+}
+.nav li {
+  padding: 0 13px;
+  font-size: .8em;
+  font-weight: bold;
+}
+.contact-btn {
+  font-weight: bold;
+  padding: 10px 17px;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, #CCFF19,#65FF00) 1;
+  background: none;
+  color: white;
+  font-size: 10px;
+}
+.person {
+  background: url(images/person.jpg) no-repeat 190% 10%;
+  background-size: 850px;
+  align-self: center;
+  padding-top: 110px;
+  padding-bottom: 150px;
+  grid-row: 2;
+  grid-column-start: 2;
+  box-shadow: inset -5px -20px 20px 0px rgb(0 0 0 / 90%);
+}
+.person-title {
+  font-size: 70px;
+  color: #89ff08;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.line {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  border-bottom: 2px dotted #272727;
+  width: 50%;
+  height: 37px;
+}
+.line::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 75px;
+  background: linear-gradient(#68fa00,#8afa09,#d3ee1a);
+  border-radius: 2px;
+}
+@media screen and (max-width: 800px) {
+  .container {
+
+  }
+  .nav {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+  }
+  .nav h2 {
+    font-size: 1.5em;
+  }
+  .navbar {
+    display: block;
+    font-size: 2em;
+  }
+  .navbar:hover ~ .nav ul {
+    display: block;
+  }
+  .nav ul {
+    display: none;
+  }
+}
+.contact-btn {
+
+}
+.institutional {
+
+}
+.skills {
+
+}
+.portfolio {
+
+}
+.services {
+
+}
+.brand {
+
+}
+.communicate{
+
+}
+.foot {
+
+}
