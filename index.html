@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#272727">
     <link rel="stylesheet" href="master.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,11 +12,11 @@
     <div class="container">
       <div class="nav">
         <h2>Web Developer<span class="small">2.0</span></h2>
-        <!-- <span class="navbar">|||</span> -->
-        <i class="fa fa-bars navbar"></i>
-          <ul>
+        <div id="hide">
+        <i class="fa fa-bars" id="hide-btn"></i>
+          <ul id="con">
             <li>Home <i class="fa fa-caret-down"></i></li>
-            <li>About</li>
+            <li>About</a></li>
             <li>Portfolio</li>
             <li>Services</li>
             <li><i class="fa fa-search"></i></li>
@@ -24,6 +24,7 @@
             <li><i class="fa fa-instagram"></i></li>
             <li><button class="contact-btn"><i class="fa fa-commenting-o"></i>  CONTACT US </button></li>
           </ul>
+        </div>
       </div>
       <div class="person">
         <h2 class="person-title">
@@ -31,19 +32,72 @@
           I'm Zamil.
         </h2>
         <button class="contact-btn"><i class="fa fa-coffee"></i> GET STARTED </button>
-        <div class="line"></div>
+        <div class="line">
+        </div>
       </div>
       <div class="institutional">
-
+        <h1>Institutional</h1>
+        <p>Get to know a little of our history and the road we traveled that took us to the level we are today.</p>
+        <div class="play-container">
+          <div class="g">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="line-l">
+        </div>
       </div>
       <div class="skills">
-
+        <h1>Main Skills</h1>
+        <p>We see all types of projects as if they were ours. This brings us closer to our client's projects bringing much more confidence and commitment.
+        <div class="p-bars">
+          <svg height="200" width="800">
+            <circle class="circle" cx="100" cy="100" r="45" stroke="#65FF00" stroke-width="8" fill-opacity="0" />
+            <circle class="circle" cx="300" cy="100" r="45" stroke="#65FF00" stroke-width="8" fill-opacity="0" />
+            <circle class="circle" cx="500" cy="100" r="45" stroke="#65FF00" stroke-width="8" fill-opacity="0" />
+	          <circle class="circle" cx="700" cy="100" r="45" stroke="#65FF00" stroke-width="8" fill-opacity="0" />
+        </svg>
+        <h2>42<span class="small-per">%</span></h2>
+        <h2>60<span class="small-per">%</span></h2>
+        <h2>84<span class="small-per">%</span></h2>
+        <h2>100<span class="small-per">%</span></h2>
+        <h3>Marketing</h3>
+        <h3>Branding</h3>
+        <h3>Web Design</h3>
+        <h3>WordPress</h3>
+        </div>
+        <div class="line m-20">
+        </div>
       </div>
       <div class="portfolio">
-
+        <h1>Our Portfolio</h1>
+        <p>We have already built amazing things for our customers.</p>
+        <div class="art">
+          <div>
+            <h4>Visual art</h4>
+            <p class="art-cap">An impressive creation for a cosmetics company.<p>
+            <img src="images/art.png" alt="" class="art-img">
+          </div>
+          <div>
+            <h4>Abstract Design</h4>
+            <p class="art-cap">We seek to obtain something innovative from art.</p>
+            <img src="images/design.png" alt="" class="art-img">
+          </div>
+          <div>
+            <h4>Creative Painting</h4>
+            <p class="art-cap">We combine the use of balanced colors with painting.</p>
+            <img src="images/painting.png" alt="" class="art-img">
+          </div>
+        </div>
+        <div class="line-l">
+        </div>
       </div>
       <div class="services">
-
+        <!-- <div>
+          <h3>Website Pro</h3>
+          <p>We build professional responsive websites optimized for the most popular search engines.</p>
+        </div> -->
       </div>
       <div class="brand">
 
